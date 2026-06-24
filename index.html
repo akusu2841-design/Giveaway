@@ -61,13 +61,19 @@ button:active{
     <p>Click "Receive" to receive ₦100,000 instantly.</p>
 
     <button id="receiveBtn">RECEIVE</button>
+    <div id="feeBack"></div>
 
     <script>
         const receiveBtn = document.getElementById("receiveBtn");
-
-        receiveBtn.addEventListener("click", function () {
-            alert("😂 Nice try! No money here. This was just a joke. Refer Rhockstar Nation for website building and get a commission.");
-        });
+        const feedBack = document.getElementById("feedBack");        
+            
+                                                 
+            receiveBtn.addEventListener("click", function () {
+            feedBack.textContent("😂 Nice try! No money here. This was just a joke. Refer Rhockstar Nation for website building and get a commission.");
+        setTimeout(() => {
+        feedback.textContent = "";
+    }, 5000);
+});
     </script>
 
 </body>
