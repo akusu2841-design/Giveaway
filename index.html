@@ -52,6 +52,16 @@ button:hover{
 
 button:active{
     transform:translateY(0);
+
+    #feeBack{
+    margin-top:20px;
+    max-width:500px;
+    font-size:1.1rem;
+    font-weight:bold;
+    background:rgba(255,255,255,0.15);
+    padding:15px;
+    border-radius:10px;
+    }
 }
         </style>
 </head>
@@ -61,7 +71,7 @@ button:active{
     <p>Click "Receive" to receive ₦100,000 instantly.</p>
 
     <button id="receiveBtn">RECEIVE</button>
-    <div id="feeBack"></div>
+    <div id="feedBack"></div>
 
     <script>
         const receiveBtn = document.getElementById("receiveBtn");
@@ -69,7 +79,8 @@ button:active{
             
                                                  
             receiveBtn.addEventListener("click", function () {
-            feedBack.textContent("😂 Nice try! No money here. This was just a joke. Refer Rhockstar Nation for website building and get a commission.");
+            feedBack.textContent ="😂 Nice try! No money here. This was just a joke. 
+             Refer Rhockstar Nation for website building and get a commission.";
         setTimeout(() => {
         feedback.textContent = "";
     }, 5000);
