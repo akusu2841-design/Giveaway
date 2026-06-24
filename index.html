@@ -52,7 +52,7 @@ button:hover{
 
 button:active{
     transform:translateY(0);
-
+}
     #feeBack{
     margin-top:20px;
     max-width:500px;
@@ -62,7 +62,6 @@ button:active{
     padding:15px;
     border-radius:10px;
     }
-}
         </style>
 </head>
 <body>
@@ -79,10 +78,12 @@ button:active{
             
                                                  
             receiveBtn.addEventListener("click", function () {
-            feedBack.textContent ="😂 Nice try! No money here. This was just a joke. 
-             Refer Rhockstar Nation for website building and get a commission.";
+            feedBack.textContent =
+"😂 Nice try! No money here. This was just a joke. Refer Rhockstar Nation for website building and get a commission.";
+
+
         setTimeout(() => {
-        feedback.textContent = "";
+        feedBack.textContent = "";
     }, 5000);
 });
     </script>
